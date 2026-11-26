@@ -50,9 +50,9 @@ const compactLayout = matchMedia("(max-width: 820px)");
 const moreToggle = document.querySelector("#more-toggle");
 const moreDialog = document.querySelector("#more-dialog");
 const moreLinks = Array.from(document.querySelectorAll('#more-dialog a[href^="#"]'));
-const shortcutLinks = Array.from(document.querySelectorAll(".nav-link[data-shortcut]"));
-const navLinks = [...shortcutLinks, ...document.querySelectorAll(".mobile-tab[href]"), ...moreLinks];
-const navSections = shortcutLinks.map((link) => document.querySelector(link.hash));
+const sidebarLinks = Array.from(document.querySelectorAll('#sidebar .nav-link[href^="#"]'));
+const navLinks = [...sidebarLinks, ...document.querySelectorAll(".mobile-tab[href]"), ...moreLinks];
+const navSections = sidebarLinks.map((link) => document.querySelector(link.hash));
 
 function closeOnBackdrop(dialog) {
   dialog.addEventListener("click", (event) => {
@@ -149,8 +149,6 @@ if (dialog && typeof dialog.showModal === "function") {
   for (const button of document.querySelectorAll("[data-open-search]")) {
     button.hidden = false;
     button.setAttribute("aria-keyshortcuts", apple ? "Meta+K" : "Control+K");
-    const shortcut = button.querySelector("kbd");
-    if (shortcut) shortcut.textContent = apple ? "⌘ K" : "Ctrl K";
     button.addEventListener("click", openSearch);
   }
   searchInput.addEventListener("input", renderSearch);
@@ -167,25 +165,11 @@ if (dialog && typeof dialog.showModal === "function") {
   closeOnBackdrop(dialog);
 }
 
-for (const link of shortcutLinks) {
-  link.setAttribute("aria-keyshortcuts", "Alt+" + link.dataset.shortcut.toUpperCase());
-  link.querySelector("kbd").textContent = "Alt " + link.dataset.shortcut.toUpperCase();
-}
-
 addEventListener("keydown", (event) => {
   if (event.defaultPrevented || event.repeat) return;
   if (typeof dialog?.showModal === "function" && (event.ctrlKey || event.metaKey) && !event.altKey &&
       !event.shiftKey && event.key.toLowerCase() === "k") {
     event.preventDefault();
     openSearch();
-    return;
-  }
-  if (!event.altKey || event.ctrlKey || event.metaKey || event.shiftKey ||
-      dialog?.open || moreDialog?.open || event.target.closest?.("input, textarea, select, [contenteditable]")) return;
-  const key = event.code === "KeyC" ? "c" : event.code.replace(/^Digit/, "");
-  const link = shortcutLinks.find((candidate) => candidate.dataset.shortcut === key);
-  if (link) {
-    event.preventDefault();
-    link.click();
   }
 });
