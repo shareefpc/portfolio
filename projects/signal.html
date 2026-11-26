@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Signal is an example dashboard case study for exploring product traffic.">
+  <meta name="theme-color" content="#161618">
+  <title>Signal — Shareef PC</title>
+  <link rel="icon" href="../assets/avatar.webp" type="image/webp">
+  <link rel="stylesheet" href="../assets/styles.css">
+  <script src="../assets/demos.js" defer></script>
+</head>
+<body>
+  <main class="case-content">
+    <nav class="case-nav" aria-label="Case study navigation"><a href="../index.html#projects">Back to projects</a><p>Shareef PC</p></nav>
+    <header class="case-header">
+      <p class="eyebrow">Demonstration project / Dashboard design</p>
+      <h1>Signal</h1>
+      <p class="case-summary">A product analytics dashboard that lets teams compare where visits come from over a chosen time range.</p>
+    </header>
+    <img src="../assets/signal.webp" alt="Signal dashboard with visit totals and a traffic channel chart" width="1000" height="562">
+    <div class="case-details">
+      <article class="panel"><h2>Interface</h2><p>Keep the date range above the chart. Use horizontal bars for quick comparison and show the exact counts alongside them for accessible reading.</p></article>
+      <article class="panel"><h2>Proposed data flow</h2><p>Store visit events once and aggregate daily channel totals. A reporting API would return totals for a validated date range, using the same dataset for charts and exports.</p></article>
+    </div>
+    <section class="panel demo" id="signal-demo" aria-labelledby="signal-demo-title">
+      <h2 id="signal-demo-title">Explore sample traffic</h2>
+      <p>Change the reporting period to compare visits by channel using fictional data.</p>
+      <form hidden><label>Reporting period<select name="period"><option value="7">Last 7 days</option><option value="30">Last 30 days</option></select></label></form>
+      <p class="demo-output" role="status"></p>
+      <div class="bar-chart" role="list" aria-label="Visits by channel"></div>
+      <noscript><p>Enable JavaScript to use the interactive demo.</p></noscript>
+    </section>
+    <footer class="footer"><span>© 2026 Shareef PC</span><a href="../index.html#projects">All projects</a></footer>
+  </main>
+</body>
+</html>

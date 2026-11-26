@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Relay is an example full-stack case study for a client request workspace.">
+  <meta name="theme-color" content="#161618">
+  <title>Relay — Shareef PC</title>
+  <link rel="icon" href="../assets/avatar.webp" type="image/webp">
+  <link rel="stylesheet" href="../assets/styles.css">
+  <script src="../assets/demos.js" defer></script>
+</head>
+<body>
+  <main class="case-content">
+    <nav class="case-nav" aria-label="Case study navigation"><a href="../index.html#projects">Back to projects</a><p>Shareef PC</p></nav>
+    <header class="case-header">
+      <p class="eyebrow">Demonstration project / Full-stack design</p>
+      <h1>Relay</h1>
+      <p class="case-summary">A client request workspace for small teams that need one place to capture incoming work and see what has been resolved.</p>
+    </header>
+    <img src="../assets/relay.webp" alt="Relay’s client requests dashboard with an intake form and a status column" width="1000" height="562">
+    <div class="case-details">
+      <article class="panel"><h2>Design approach</h2><p>Start with one required field so a client can file a request quickly. On the same screen, the team can scan open requests and see which ones are resolved.</p></article>
+      <article class="panel"><h2>Proposed architecture</h2><p>A React workspace would read and update requests through a Node.js API. PostgreSQL would store workspaces, members, and requests, with workspace-level access enforced for each read and update.</p></article>
+    </div>
+    <section class="panel demo" id="relay-demo" aria-labelledby="relay-demo-title">
+      <h2 id="relay-demo-title">Try the request queue</h2>
+      <p>Add a sample request, then mark it resolved. This browser demo resets when you refresh.</p>
+      <form hidden><label>Request title<input name="title" required maxlength="80" placeholder="e.g. Update the help page"></label><button class="button button-primary">Add request</button></form>
+      <p class="demo-output" role="status"></p>
+      <ul class="request-list" aria-label="Requests"></ul>
+      <noscript><p>Enable JavaScript to use the interactive demo.</p></noscript>
+    </section>
+    <footer class="footer"><span>© 2026 Shareef PC</span><a href="forma.html">Next project · Forma</a></footer>
+  </main>
+</body>
+</html>

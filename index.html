@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#151518">
+  <meta name="description" content="Shareef PC is a full-stack developer and product designer. Explore example web applications and product design case studies.">
+  <title>Shareef PC — Full-Stack Developer &amp; Product Designer</title>
+  <link rel="icon" href="assets/avatar.webp" type="image/webp">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/contact.js" defer></script>
+  <script src="assets/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <svg class="icon-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="icon-explore" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m15.4 8.6-2 4.8-4.8 2 2-4.8z"/></symbol>
+    <symbol id="icon-projects" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M4 10h16m-10 0v10"/></symbol>
+    <symbol id="icon-services" viewBox="0 0 24 24"><path d="m12 3 2.4 6.6L21 12l-6.6 2.4L12 21l-2.4-6.6L3 12l6.6-2.4L12 3Z"/></symbol>
+    <symbol id="icon-about" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3"/><path d="M5 20v-1a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v1"/></symbol>
+    <symbol id="icon-stack" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5Zm-9 9 9 5 9-5m-18 4 9 5 9-5"/></symbol>
+    <symbol id="icon-contact" viewBox="0 0 24 24"><path d="M21 4 3 10l7 3 3 7 8-16ZM10 13l5-5"/></symbol>
+    <symbol id="icon-more" viewBox="0 0 24 24"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></symbol>
+    <symbol id="icon-linkedin" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v6m4 0v-6m0 3a2 2 0 1 1 4 0v3"/><circle cx="8" cy="7" r=".5" fill="currentColor"/></symbol>
+    <symbol id="icon-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></symbol>
+    <symbol id="icon-email" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></symbol>
+    <symbol id="icon-external" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10"/></symbol>
+  </svg>
+
+  <aside class="sidebar" id="sidebar" aria-label="Portfolio sidebar">
+    <a class="profile" href="#explore">
+      <img src="assets/avatar.webp" alt="" width="44" height="44">
+      <span><strong>Shareef PC</strong><small>Developer &amp; Designer</small></span>
+    </a>
+
+    <nav class="sidebar-nav" aria-label="Portfolio navigation">
+      <div class="nav-group">
+        <a class="nav-link" href="#explore" data-shortcut="1" aria-current="location"><svg aria-hidden="true"><use href="#icon-explore"/></svg><span>Explore</span><kbd>1</kbd></a>
+        <a class="nav-link" href="#projects" data-shortcut="2"><svg aria-hidden="true"><use href="#icon-projects"/></svg><span>Projects</span><kbd>2</kbd></a>
+        <a class="nav-link" href="#services" data-shortcut="3"><svg aria-hidden="true"><use href="#icon-services"/></svg><span>Services</span><kbd>3</kbd></a>
+        <a class="nav-link" href="#about" data-shortcut="4"><svg aria-hidden="true"><use href="#icon-about"/></svg><span>About</span><kbd>4</kbd></a>
+      </div>
+
+      <div class="nav-group">
+        <p class="nav-label">Workspace</p>
+        <a class="nav-link" href="#stack" data-shortcut="5"><svg aria-hidden="true"><use href="#icon-stack"/></svg><span>Stack</span><kbd>5</kbd></a>
+      </div>
+
+      <div class="nav-group">
+        <p class="nav-label">Connect</p>
+        <a class="nav-link" href="#contact" data-shortcut="c"><svg aria-hidden="true"><use href="#icon-contact"/></svg><span>Contact</span><kbd>C</kbd></a>
+        <a class="nav-link connect-link" data-contact-link="linkedin" aria-disabled="true" title="Link not configured"><svg aria-hidden="true"><use href="#icon-linkedin"/></svg><span>LinkedIn</span><svg class="external-arrow" aria-hidden="true"><use href="#icon-external"/></svg></a>
+        <a class="nav-link connect-link" data-contact-link="instagram" aria-disabled="true" title="Link not configured"><svg aria-hidden="true"><use href="#icon-instagram"/></svg><span>Instagram</span><svg class="external-arrow" aria-hidden="true"><use href="#icon-external"/></svg></a>
+        <a class="nav-link connect-link" data-contact-link="email" aria-disabled="true" title="Email not configured"><svg aria-hidden="true"><use href="#icon-email"/></svg><span>Email</span><svg class="external-arrow" aria-hidden="true"><use href="#icon-external"/></svg></a>
+      </div>
+    </nav>
+
+    <button class="search-trigger" type="button" data-open-search hidden>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="5.5"/><path d="m15 15 4 4"/></svg>
+      <span>Search portfolio</span><kbd>/</kbd>
+    </button>
+  </aside>
+
+  <header class="mobile-header">
+    <a class="profile" href="#explore"><img src="assets/avatar.webp" alt="" width="36" height="36"><strong>Shareef PC</strong></a>
+    <button class="icon-button" type="button" aria-label="Search portfolio" data-open-search hidden><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="5.5"/><path d="m15 15 4 4"/></svg></button>
+  </header>
+
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <a class="mobile-tab" href="#explore" aria-current="location"><svg aria-hidden="true"><use href="#icon-explore"/></svg><span>Explore</span></a>
+    <a class="mobile-tab" href="#projects"><svg aria-hidden="true"><use href="#icon-projects"/></svg><span>Projects</span></a>
+    <a class="mobile-tab" href="#about"><svg aria-hidden="true"><use href="#icon-about"/></svg><span>About</span></a>
+    <a class="mobile-tab" href="#contact"><svg aria-hidden="true"><use href="#icon-contact"/></svg><span>Contact</span></a>
+    <button class="mobile-tab" id="more-toggle" type="button" aria-haspopup="dialog" aria-controls="more-dialog"><svg aria-hidden="true"><use href="#icon-more"/></svg><span>More</span></button>
+  </nav>
+
+  <dialog class="more-dialog" id="more-dialog" aria-labelledby="more-title">
+    <div class="more-header"><h2 id="more-title">More</h2><form method="dialog"><button class="icon-button" aria-label="Close navigation"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></form></div>
+    <nav class="more-nav" aria-label="More portfolio links">
+      <div class="nav-group">
+        <a class="nav-link" href="#services"><svg aria-hidden="true"><use href="#icon-services"/></svg><span>Services</span></a>
+        <a class="nav-link" href="#stack"><svg aria-hidden="true"><use href="#icon-stack"/></svg><span>Stack</span></a>
+      </div>
+      <div class="nav-group">
+        <p class="nav-label">Connect</p>
+        <a class="nav-link connect-link" data-contact-link="linkedin" aria-disabled="true" title="Link not configured"><svg aria-hidden="true"><use href="#icon-linkedin"/></svg><span>LinkedIn</span><svg class="external-arrow" aria-hidden="true"><use href="#icon-external"/></svg></a>
+        <a class="nav-link connect-link" data-contact-link="instagram" aria-disabled="true" title="Link not configured"><svg aria-hidden="true"><use href="#icon-instagram"/></svg><span>Instagram</span><svg class="external-arrow" aria-hidden="true"><use href="#icon-external"/></svg></a>
+        <a class="nav-link connect-link" data-contact-link="email" aria-disabled="true" title="Email not configured"><svg aria-hidden="true"><use href="#icon-email"/></svg><span>Email</span><svg class="external-arrow" aria-hidden="true"><use href="#icon-external"/></svg></a>
+      </div>
+    </nav>
+  </dialog>
+
+  <main class="site-main" id="main" tabindex="-1">
+    <div class="content">
+      <section class="hero" id="explore" data-search-title="Explore" data-search-context="Portfolio overview">
+        <p class="eyebrow hero-label"><span class="status-dot" aria-hidden="true"></span> Full-stack developer &amp; product designer</p>
+        <h1>I design and build<br> <span>products for the web.</span></h1>
+        <p class="hero-intro">I’m Shareef PC. I work across product design and development, from mapping a workflow to building the interface, API, and database behind it.</p>
+        <div class="actions">
+          <a class="button button-primary" href="#projects">View projects</a>
+          <a class="button" href="#about">About me</a>
+        </div>
+      </section>
+
+      <a class="feature" href="projects/relay.html" aria-label="View Relay, an example full-stack project">
+        <img src="assets/hero.webp" width="1600" height="900" alt="" fetchpriority="high">
+        <div class="feature-content">
+          <span class="eyebrow feature-tag"><span class="status-dot" aria-hidden="true"></span> Featured demo</span>
+          <div class="feature-title"><strong>Relay</strong><span>A workspace for client requests</span></div>
+          <span class="feature-action" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 12h12m-5-5 5 5-5 5"/></svg></span>
+        </div>
+      </a>
+
+      <section class="section" id="projects" data-search-title="Selected projects" data-search-context="Full-stack development and product design">
+        <div class="section-heading"><h2>Selected projects</h2><span class="section-note">Demonstration projects</span></div>
+        <div class="project-grid">
+          <a class="project-card" href="projects/relay.html" data-search-title="Relay" data-search-context="Client requests · full-stack architecture · React · Node.js · PostgreSQL">
+            <img src="assets/relay.webp" width="1000" height="562" loading="lazy" alt="">
+            <div class="project-caption"><div><h3>Relay</h3><p>Full-stack web app</p></div><span class="pill">Demo</span></div>
+          </a>
+          <a class="project-card" href="projects/forma.html" data-search-title="Forma" data-search-context="Product design · mobile UX · appointment booking · Figma">
+            <img src="assets/forma.webp" width="1000" height="562" loading="lazy" alt="">
+            <div class="project-caption"><div><h3>Forma</h3><p>Product design</p></div><span class="pill">Concept</span></div>
+          </a>
+          <a class="project-card" href="projects/signal.html" data-search-title="Signal" data-search-context="Analytics · dashboard · data visualization · full-stack development">
+            <img src="assets/signal.webp" width="1000" height="562" loading="lazy" alt="">
+            <div class="project-caption"><div><h3>Signal</h3><p>Dashboard design &amp; development</p></div><span class="pill">Demo</span></div>
+          </a>
+        </div>
+      </section>
+
+      <section class="section" id="services" data-search-title="Services" data-search-context="Product design, frontend and backend development">
+        <div class="section-heading"><h2>Services</h2></div>
+        <div class="service-grid panel">
+          <article><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="12" r="5"/><path d="M13 7h6v10h-6"/></svg><h3>Product design</h3><p>User flows, prototypes, and interface systems that make complex tasks easier to complete.</p></article>
+          <article><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 9h18m-12 0v10"/></svg><h3>Frontend development</h3><p>Responsive interfaces with reusable components, accessible navigation, and clear feedback.</p></article>
+          <article><svg viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.65 3.6 3 8 3s8-1.35 8-3V6M4 12c0 1.65 3.6 3 8 3s8-1.35 8-3"/></svg><h3>Backend development</h3><p>APIs and data models that support the product’s workflows and keep its state consistent.</p></article>
+        </div>
+      </section>
+
+      <section class="section about panel" id="about" data-search-title="About Shareef PC" data-search-context="Full-stack development and product design">
+        <img src="assets/portrait.webp" width="900" height="900" loading="lazy" alt="Portrait of Shareef PC">
+        <div class="about-copy"><p class="eyebrow">About</p><h2>Hi, I’m Shareef.</h2><p>I’m a full-stack developer and product designer. I like starting with what someone needs to get done and following that through to the way the product looks, behaves, and stores information.</p><p>The examples here show how I’d approach a client workspace, an appointment flow, and an analytics dashboard.</p></div>
+      </section>
+
+      <section class="section panel stack" id="stack" data-search-title="Stack" data-search-context="Figma, React, Node.js, PostgreSQL, HTML and CSS">
+        <div class="section-heading"><div><h2>Stack</h2><p>Tools used on this site and proposed in the example projects.</p></div></div>
+        <div class="stack-grid">
+          <article class="stack-item"><span class="tool-icon" aria-hidden="true"><img src="assets/stack/figma.svg" width="28" height="28" alt=""></span><div><h3>Figma</h3><p>Product design &amp; prototyping</p></div></article>
+          <article class="stack-item"><span class="tool-icon" aria-hidden="true"><img src="assets/stack/react.svg" width="28" height="28" alt=""></span><div><h3>React</h3><p>Component-based interfaces</p></div></article>
+          <article class="stack-item"><span class="tool-icon" aria-hidden="true"><img src="assets/stack/nodejs.svg" width="28" height="28" alt=""></span><div><h3>Node.js</h3><p>API &amp; application logic</p></div></article>
+          <article class="stack-item"><span class="tool-icon" aria-hidden="true"><img src="assets/stack/postgresql.svg" width="28" height="28" alt=""></span><div><h3>PostgreSQL</h3><p>Relational data</p></div></article>
+          <article class="stack-item">
+            <span class="tool-icon tool-icon-pair" aria-hidden="true">
+              <img src="assets/stack/html5.svg" width="18" height="18" alt="">
+              <img src="assets/stack/css3.svg" width="18" height="18" alt="">
+            </span>
+            <div><h3>HTML &amp; CSS</h3><p>Page structure &amp; responsive layouts</p></div>
+          </article>
+          <article class="stack-item"><span class="tool-icon" aria-hidden="true"><img src="assets/stack/javascript.svg" width="28" height="28" alt=""></span><div><h3>JavaScript</h3><p>Browser interactions</p></div></article>
+        </div>
+      </section>
+
+      <section class="section panel contact" id="contact" data-search-title="Contact" data-search-context="Email, LinkedIn, Instagram and project brief">
+        <div><p class="eyebrow">Contact</p><h2>Have a project in mind?</h2><p>Start with the format, timeline, and any references you have.</p></div>
+        <div class="actions contact-actions" id="contact-actions">
+          <a class="button button-primary" href="assets/project-brief.txt" download>Download brief</a>
+        </div>
+      </section>
+
+      <footer class="footer"><span>© 2026 Shareef PC</span><a href="#explore">Back to top</a></footer>
+    </div>
+  </main>
+
+  <dialog class="search-dialog" id="search-dialog" aria-labelledby="search-title">
+    <div class="search-header"><h2 id="search-title">Search portfolio</h2><form method="dialog"><button class="icon-button" aria-label="Close search"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></form></div>
+    <input id="search-input" type="search" placeholder="Find a project or section…" aria-label="Find a project or section" autocomplete="off">
+    <p class="search-status" id="search-status" role="status"></p>
+    <ul class="search-results" id="search-results" aria-label="Search results"></ul>
+  </dialog>
+</body>
+</html>

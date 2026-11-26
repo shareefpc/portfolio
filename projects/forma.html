@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Forma is an example product design case study for a mobile appointment booking flow.">
+  <meta name="theme-color" content="#161618">
+  <title>Forma — Shareef PC</title>
+  <link rel="icon" href="../assets/avatar.webp" type="image/webp">
+  <link rel="stylesheet" href="../assets/styles.css">
+  <script src="../assets/demos.js" defer></script>
+</head>
+<body>
+  <main class="case-content">
+    <nav class="case-nav" aria-label="Case study navigation"><a href="../index.html#projects">Back to projects</a><p>Shareef PC</p></nav>
+    <header class="case-header">
+      <p class="eyebrow">Design concept / Product design</p>
+      <h1>Forma</h1>
+      <p class="case-summary">A mobile booking flow that helps people choose an appointment time and review it before they confirm.</p>
+    </header>
+    <img src="../assets/forma.webp" alt="Forma’s mobile screens for choosing a date and reviewing an appointment" width="1000" height="562">
+    <div class="case-details">
+      <article class="panel"><h2>The flow</h2><p>Show available days first and reveal time slots once a person chooses a day. Keep each choice visible so they can change the time without starting over.</p></article>
+      <article class="panel"><h2>Interaction details</h2><p>Pair the chosen date and time in the review step. Use clear labels, keyboard-friendly controls, and a confirmation message that repeats the booking details.</p></article>
+    </div>
+    <section class="panel demo" id="forma-demo" aria-labelledby="forma-demo-title">
+      <h2 id="forma-demo-title">Try the booking flow</h2>
+      <p>Choose a day and time from sample availability. The prototype simulates a booking.</p>
+      <form hidden>
+        <label>Day<select name="day"><option>Tuesday</option><option>Wednesday</option><option>Thursday</option></select></label>
+        <label>Time<select name="time" required></select></label>
+        <button class="button button-primary">Review appointment</button>
+      </form>
+      <div class="demo-output" role="status"></div>
+      <button class="button confirm-booking" type="button" hidden>Confirm sample booking</button>
+      <noscript><p>Enable JavaScript to use the interactive demo.</p></noscript>
+    </section>
+    <footer class="footer"><span>© 2026 Shareef PC</span><a href="signal.html">Next project · Signal</a></footer>
+  </main>
+</body>
+</html>
